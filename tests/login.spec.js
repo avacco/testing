@@ -24,7 +24,7 @@ test.describe("Pruebas de login", () => {
         allure.severity('critical');
         await loginPage.login(
             "admin@exampwwwle.com",
-            "admin123"
+            "admin12345"
         )
         await expect(
             page
