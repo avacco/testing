@@ -11,7 +11,7 @@ test.describe("Validación de comportamiento del backend", () => {
 
         //Visitar el sitio web a probar
         await page.goto('https://ecommerce-js-test.vercel.app/');
-
+        await page.getByPlaceholder('Search products...').fill("asdzxc");
         await expect(page.getByText('Ningún producto disponible.', { exact: true })).toBeVisible();
 
     });
